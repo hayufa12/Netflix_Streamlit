@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-
+import difflib
 df = pd.read_csv('netflix_titles.csv', header=0)
 df['cast'] = df['cast'].fillna('NA').str.split(', ')
 df['director'] = df['director'].fillna('NA').str.split(', ')
