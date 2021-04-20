@@ -27,10 +27,10 @@ num = st.slider("Select the number of item", 1, 20, 10)
 st.write(func.to_bar(column, num))
 st.write('---')
 
-st.header('Recommended Movies')
-movies = st.selectbox(
-    "Select your favorite movie",
-    func.movie.title
-    )
-st.subheader('Movies that are similiar to your favorite one:')
-st.write(func.movies_similarity(movies))
+# st.header('Recommended Movies')
+# movies = st.selectbox(
+#     "Select your favorite movie",
+#     func.movie.title
+#     )
+# st.subheader('Movies that are similiar to your favorite one:')
+# st.write(func.movies_similarity(movies))
